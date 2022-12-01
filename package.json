@@ -1,0 +1,15 @@
+{
+  "name": "advent-of-code-2022",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "Roald Hacquebord <roald@zielma.kr>",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^18.11.10"
+  },
+  "scripts": {
+    "day1": "ts-node --esm day1/solve.ts"
+  }
+}

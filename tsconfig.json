@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "skipLibCheck": true,
+        "module": "ES2022",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "target": "es2022",
+        "incremental": true,
+        "declaration": true,
+        "removeComments": true,
+        "sourceMap": true,
+        "strictNullChecks": true,
+        "noImplicitAny": true,
+        "strictBindCallApply": true,
+        "forceConsistentCasingInFileNames": true,
+        "noFallthroughCasesInSwitch": true
+    }
+}
