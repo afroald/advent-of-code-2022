@@ -8,6 +8,8 @@
   "type": "module",
   "devDependencies": {
     "@types/jest": "^29.2.3",
+    "@types/lodash.chunk": "^4.2.7",
+    "@types/lodash.intersection": "^4.4.7",
     "@types/node": "^18.11.10",
     "@typescript-eslint/eslint-plugin": "^5.45.0",
     "@typescript-eslint/parser": "^5.45.0",
@@ -26,7 +28,12 @@
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
     "test:watch": "NODE_OPTIONS=--experimental-vm-modules jest --watch",
     "day1": "ts-node --esm day1/run.ts",
-    "day2": "ts-node --esm day2/run.ts"
+    "day2": "ts-node --esm day2/run.ts",
+    "day3": "ts-node --esm day3/run.ts"
   },
-  "packageManager": "yarn@3.3.0"
+  "packageManager": "yarn@3.3.0",
+  "dependencies": {
+    "lodash.chunk": "^4.2.0",
+    "lodash.intersection": "^4.4.0"
+  }
 }

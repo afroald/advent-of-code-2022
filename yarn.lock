@@ -977,6 +977,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/lodash.chunk@npm:^4.2.7":
+  version: 4.2.7
+  resolution: "@types/lodash.chunk@npm:4.2.7"
+  dependencies:
+    "@types/lodash": "*"
+  checksum: 09df5ca00d8866776038bf94658d30b4ea84bffe5f81c14c01568bcb6be692bf59f6ea093de2bb0afbb3f8e54ae96ebd97595f2838ab59b77865427ca77d391e
+  languageName: node
+  linkType: hard
+
+"@types/lodash.intersection@npm:^4.4.7":
+  version: 4.4.7
+  resolution: "@types/lodash.intersection@npm:4.4.7"
+  dependencies:
+    "@types/lodash": "*"
+  checksum: c69abe77c677b35f954c473483e88ca2cdd7ea53691c1505da68876871d69aa2d626afd2f6183cc21ecf0792167fa51998165e861f06e94f5186eeac45b6a007
+  languageName: node
+  linkType: hard
+
+"@types/lodash@npm:*":
+  version: 4.14.191
+  resolution: "@types/lodash@npm:4.14.191"
+  checksum: ba0d5434e10690869f32d5ea49095250157cae502f10d57de0a723fd72229ce6c6a4979576f0f13e0aa9fbe3ce2457bfb9fa7d4ec3d6daba56730a51906d1491
+  languageName: node
+  linkType: hard
+
 "@types/node@npm:*, @types/node@npm:^18.11.10":
   version: 18.11.10
   resolution: "@types/node@npm:18.11.10"
@@ -1178,6 +1203,8 @@ __metadata:
   resolution: "advent-of-code-2022@workspace:."
   dependencies:
     "@types/jest": ^29.2.3
+    "@types/lodash.chunk": ^4.2.7
+    "@types/lodash.intersection": ^4.4.7
     "@types/node": ^18.11.10
     "@typescript-eslint/eslint-plugin": ^5.45.0
     "@typescript-eslint/parser": ^5.45.0
@@ -1185,6 +1212,8 @@ __metadata:
     eslint-config-prettier: ^8.5.0
     eslint-plugin-prettier: ^4.2.1
     jest: ^29.3.1
+    lodash.chunk: ^4.2.0
+    lodash.intersection: ^4.4.0
     prettier: ^2.8.0
     ts-jest: ^29.0.3
     ts-node: ^10.9.1
@@ -3238,6 +3267,20 @@ __metadata:
   dependencies:
     p-locate: ^5.0.0
   checksum: 72eb661788a0368c099a184c59d2fee760b3831c9c1c33955e8a19ae4a21b4116e53fa736dc086cdeb9fce9f7cc508f2f92d2d3aae516f133e16a2bb59a39f5a
+  languageName: node
+  linkType: hard
+
+"lodash.chunk@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "lodash.chunk@npm:4.2.0"
+  checksum: 6286c6d06814fbeda502164015c42ef53a9194e6ebaac52ec2b41e83344aefe7bc3d94fdfec525adcd2c66cefdf05dc333b6a1128e4de739797342315c17cbc7
+  languageName: node
+  linkType: hard
+
+"lodash.intersection@npm:^4.4.0":
+  version: 4.4.0
+  resolution: "lodash.intersection@npm:4.4.0"
+  checksum: 98935dcba1bbb981c3927e3822f6f6f344736c881df4b622e4e40ca4a125490425449e23179f46294a1b4c351de4e9a7bb60207cc6ddd65ecfd45ef727d35123
   languageName: node
   linkType: hard
 
