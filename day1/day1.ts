@@ -1,6 +1,4 @@
-function sum(values: number[]): number {
-  return values.reduce((sum, value) => sum + value, 0);
-}
+import sum from 'lodash.sum';
 
 export function solve(input: string): [number, number] {
   const values = input
@@ -8,8 +6,7 @@ export function solve(input: string): [number, number] {
     .split('\n\n')
     .map((elf) => elf.split('\n').map((value) => parseInt(value, 10)))
     .map(sum)
-    .sort((a, b) => a - b)
-    .reverse();
+    .sort((a, b) => b - a);
 
   return [values[0], sum(values.slice(0, 3))];
 }

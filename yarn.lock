@@ -995,6 +995,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/lodash.sum@npm:^4.0.7":
+  version: 4.0.7
+  resolution: "@types/lodash.sum@npm:4.0.7"
+  dependencies:
+    "@types/lodash": "*"
+  checksum: a8f5adca04829d04f1e65b6535e80f79d370dfc1a75a8ad657a3807e21b4522ec315469b486055aac65673d203677598ae76ae46fc9658e67ba52ec4ae9e5304
+  languageName: node
+  linkType: hard
+
 "@types/lodash@npm:*":
   version: 4.14.191
   resolution: "@types/lodash@npm:4.14.191"
@@ -1205,6 +1214,7 @@ __metadata:
     "@types/jest": ^29.2.3
     "@types/lodash.chunk": ^4.2.7
     "@types/lodash.intersection": ^4.4.7
+    "@types/lodash.sum": ^4.0.7
     "@types/node": ^18.11.10
     "@typescript-eslint/eslint-plugin": ^5.45.0
     "@typescript-eslint/parser": ^5.45.0
@@ -1214,6 +1224,7 @@ __metadata:
     jest: ^29.3.1
     lodash.chunk: ^4.2.0
     lodash.intersection: ^4.4.0
+    lodash.sum: ^4.0.2
     prettier: ^2.8.0
     ts-jest: ^29.0.3
     ts-node: ^10.9.1
@@ -3295,6 +3306,13 @@ __metadata:
   version: 4.6.2
   resolution: "lodash.merge@npm:4.6.2"
   checksum: ad580b4bdbb7ca1f7abf7e1bce63a9a0b98e370cf40194b03380a46b4ed799c9573029599caebc1b14e3f24b111aef72b96674a56cfa105e0f5ac70546cdc005
+  languageName: node
+  linkType: hard
+
+"lodash.sum@npm:^4.0.2":
+  version: 4.0.2
+  resolution: "lodash.sum@npm:4.0.2"
+  checksum: b33518c8bdb9b0f81a32e03afbc7577cfe6b7505daeedba73de9301fd1c6a268ec97d8d43bf03956a89a76db8fe24ffa04f977be278d1c3e679028d0e114ad33
   languageName: node
   linkType: hard
 
