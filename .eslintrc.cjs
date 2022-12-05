@@ -22,5 +22,6 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/switch-exhaustiveness-check': 'warn',
     '@typescript-eslint/no-empty-function': 'off',
+    '@typescript-eslint/no-non-null-assertion': 'off',
   },
 };
