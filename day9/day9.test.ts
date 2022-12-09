@@ -186,6 +186,7 @@ describe('day9', () => {
 
   describe('solve2', () => {
     it('solves the example', () => {
+      expect(solve2(EXAMPLE_INPUT_1)).toBe(1);
       expect(solve2(EXAMPLE_INPUT_2)).toBe(36);
     });
   });
