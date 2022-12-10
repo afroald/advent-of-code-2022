@@ -36,7 +36,8 @@
     "day6": "ts-node --esm day6/run.ts",
     "day7": "ts-node --esm day7/run.ts",
     "day8": "ts-node --esm day8/run.ts",
-    "day9": "ts-node --esm day9/run.ts"
+    "day9": "ts-node --esm day9/run.ts",
+    "day10": "ts-node --esm day10/run.ts"
   },
   "packageManager": "yarn@3.3.0",
   "dependencies": {
