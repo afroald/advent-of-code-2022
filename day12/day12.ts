@@ -41,20 +41,11 @@ class Vertex {
   toString(): string {
     return `${this.row},${this.column}`;
   }
-
-  static fromString(input: string): Vertex {
-    const [row, column] = input.split(',').map((value) => parseInt(value));
-    return new Vertex(row, column);
-  }
 }
 
-function findPaths(
-  grid: string[][],
-  start: Vertex,
-  test: (currentHeight: number, destinationHeight: number) => boolean,
-) {
-  const queue: [Vertex, number][] = [[start, 0]];
-  const paths = new Map([[start.toString(), 0]]);
+function findPaths(grid: string[][], start: Vertex[]) {
+  const queue: [Vertex, number][] = start.map((vertex) => [vertex, 0]);
+  const paths = new Map(start.map((vertex) => [vertex.toString(), 0]));
 
   while (queue.length > 0) {
     const [vertex, steps] = queue.shift() as [Vertex, number];
@@ -80,7 +71,7 @@ function findPaths(
       const heightToCheck =
         grid[vertexToCheck.row][vertexToCheck.column].charCodeAt(0);
 
-      if (!test(height, heightToCheck)) {
+      if (heightToCheck > height + 1) {
         continue;
       }
 
@@ -96,31 +87,24 @@ function findPaths(
 
 export function solve1(input: string): number {
   const [grid, start, end] = parseInput(input);
-  const paths = findPaths(
-    grid,
-    start,
-    (currentHeight: number, destinationHeight: number) =>
-      destinationHeight <= currentHeight + 1,
-  );
+  const paths = findPaths(grid, [start]);
 
   return paths.get(end.toString()) ?? 0;
 }
 
 export function solve2(input: string): number {
-  const [grid, , start] = parseInput(input);
-  const paths = findPaths(
-    grid,
-    start,
-    (currentHeight: number, destinationHeight: number) =>
-      destinationHeight >= currentHeight - 1,
-  );
+  const [grid, , end] = parseInput(input);
+  const startPositions: Vertex[] = [];
 
-  return Math.min(
-    ...Array.from(paths)
-      .filter(([vertexString]) => {
-        const vertex = Vertex.fromString(vertexString);
-        return grid[vertex.row][vertex.column] === 'a';
-      })
-      .map(([, pathLength]) => pathLength),
-  );
+  for (const row of new Range(0, grid.length)) {
+    for (const column of new Range(0, grid[0].length)) {
+      if (grid[row][column] === 'a') {
+        startPositions.push(new Vertex(row, column));
+      }
+    }
+  }
+
+  const paths = findPaths(grid, startPositions);
+
+  return paths.get(end.toString()) ?? 0;
 }
